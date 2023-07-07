@@ -13,8 +13,7 @@ struct TLButton: View {
     let action:()->Void
     var body: some View {
         Button {
-            //  Action
-            action()
+           action()
         } label: {
             ZStack{
                 RoundedRectangle(cornerRadius: 10)
@@ -27,9 +26,8 @@ struct TLButton: View {
 }
 struct TLButton_Previews: PreviewProvider {
     static var previews: some View {
-        TLButton(title: "Value", background: .pink) {
-            //Action
-            
+        TLButton(title: "Value", background:.pink) {
+            // action
         }
-    }
+        }
 }
