@@ -4,7 +4,8 @@
 //
 //  Created by Sasha Maksyutenko on 03.07.2023.
 //
-
+import FirebaseAuth
+import FirebaseFirestore
 import Foundation
 class NewItemViewViewModel:ObservableObject{
     @Published var title=""
@@ -12,7 +13,28 @@ class NewItemViewViewModel:ObservableObject{
     @Published var showAlert=false
     init(){}
     func save(){
-        
+        guard canSave else {
+            return
+        }
+        //get current user id
+        guard let uId=Auth.auth().currentUser?.uid else
+        {
+            return 
+        }
+        // create model
+        let newId=UUID().uuidString
+        let newItem=ToDoListItem(id: newId,
+            title: title,
+            duedate: dueDate.timeIntervalSince1970,
+            createddate: Date().timeIntervalSince1970,
+            isDone: false)
+        // save model
+        let db=Firestore.firestore()
+        db.collection("users")
+            .document(uId)
+            .collection("todos")
+            .document(newId)
+            .setData(newItem.asDictionary())
     }
     var canSave:Bool{
         guard !title.trimmingCharacters(in: .whitespaces).isEmpty else{
