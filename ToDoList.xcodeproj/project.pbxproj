@@ -25,6 +25,7 @@
 		F17655BC2A52EE2E00D2837C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17655BB2A52EE2E00D2837C /* HeaderView.swift */; };
 		F17655BE2A573E9200D2837C /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17655BD2A573E9200D2837C /* TLButton.swift */; };
 		F17655C02A582E7B00D2837C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17655BF2A582E7B00D2837C /* Extensions.swift */; };
+		F17655C22A5C292A00D2837C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17655C12A5C292A00D2837C /* Launch Screen.storyboard */; };
 		F18B3C342A51C2E8008CD80C /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B3C332A51C2E8008CD80C /* ToDoListApp.swift */; };
 		F18B3C362A51C2E8008CD80C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B3C352A51C2E8008CD80C /* MainView.swift */; };
 		F18B3C382A51C2E9008CD80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B3C372A51C2E9008CD80C /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		F17655BB2A52EE2E00D2837C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F17655BD2A573E9200D2837C /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		F17655BF2A582E7B00D2837C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F17655C12A5C292A00D2837C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F18B3C302A51C2E8008CD80C /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18B3C332A51C2E8008CD80C /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		F18B3C352A51C2E8008CD80C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				F18B3C4A2A51DBFA008CD80C /* GoogleService-Info.plist */,
 				F18B3C332A51C2E8008CD80C /* ToDoListApp.swift */,
 				F17655BF2A582E7B00D2837C /* Extensions.swift */,
+				F17655C12A5C292A00D2837C /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				F18B3C3B2A51C2E9008CD80C /* Preview Assets.xcassets in Resources */,
 				F18B3C382A51C2E9008CD80C /* Assets.xcassets in Resources */,
+				F17655C22A5C292A00D2837C /* Launch Screen.storyboard in Resources */,
 				F18B3C4B2A51DBFA008CD80C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +399,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -424,6 +429,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
